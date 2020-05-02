@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+
+/**
+ * ÊýµÄ¶Á·¨
+ */
+public class BASIC_20 {
+
+	public static void main(String[] args) {
+		String[] numbers = {"ling", "yi", "er", "san", "si", "wu", "liu", "qi", "ba","jiu"};
+		String[] unit = {"shi", "bai", "qian", "wan","yi"};
+		Scanner scanner = new Scanner(System.in);
+		String s = "";
+		String n = scanner.next();
+		
+		for (int i = 0; i < n.length(); i++) {
+			switch (n.charAt(i)) {
+				case '0':
+					s+="ling ";
+					break;
+				case '1':
+					s+="yi ";
+					break;
+				case '2':
+					s+="er ";
+					break;
+				case '3':
+					s+="san ";
+					break;
+				case '4':
+					s+="si ";
+					break;
+				case '5':
+					s+="wu ";
+					break;
+				case '6':
+					s+="liu ";
+					break;
+				case '7':
+					s+="qi ";
+					break;
+				case '8':
+					s+="ba ";
+					break;
+				case '9':
+					s+="jiu ";
+					break;
+	
+				default:
+					break;
+			}
+		}
+		
+		System.out.println(s);
+	}
+	
+	
+	
+	
+}
